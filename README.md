@@ -30,7 +30,7 @@ Added bonus: I currently have no idea what I am doing!
 ## Building ##
 
 ```
-> repo init -u https://github.com/lrvick/android_manifest
+> repo init -u https://github.com/lrvick/android_manifest -b master
 > repo sync
 > . build/envsetup.sh
 > lunch aosp_angler-userdebug
