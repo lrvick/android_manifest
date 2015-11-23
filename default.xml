@@ -2,6 +2,8 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
+  <remote  name="lrv"
+           fetch="https://github.com/lrvick/" />
   <remote  name="pn"
            fetch="https://github.com/PureNexus/" />
   <remote  name="cm"
@@ -10,15 +12,18 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- lrvick repos -->
+  <project path="manifest" name="android_manifest" remote="lrv" revision="mm" />
+
   <!-- PureNexus repos -->
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
   <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
   <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
 
-  <!-- cm repos -->
+  <!-- CyanogenMod repos -->
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
 
-  <!-- aosp repos -->
+  <!-- AOSP repos -->
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
