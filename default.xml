@@ -12,7 +12,7 @@
 
   <!-- PureNexus repos -->
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
-  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="nexus" revision="mm" />
+  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
 
   <!-- cm repos -->
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
