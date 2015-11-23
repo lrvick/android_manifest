@@ -2,7 +2,7 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote  name="lrv"
+  <remote  name="lrvck"
            fetch="https://github.com/lrvick/" />
   <remote  name="pn"
            fetch="https://github.com/PureNexus/" />
@@ -13,7 +13,7 @@
            sync-j="4" />
 
   <!-- lrvick repos -->
-  <project path="manifest" name="android_manifest" remote="lrv" revision="mm" />
+  <project path="manifest" name="android_manifest" remote="lrv" />
 
   <!-- PureNexus repos -->
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
