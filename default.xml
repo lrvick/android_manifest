@@ -26,7 +26,7 @@
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pn" revision="mm" />
 
   <!-- CyanogenMod repos -->
-  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
+  <!-- <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" /> -->
 
   <!-- AOSP repos -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
