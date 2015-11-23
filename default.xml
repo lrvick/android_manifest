@@ -13,7 +13,7 @@
            sync-j="4" />
 
   <!-- lrvick repos -->
-  <project path="manifest" name="android_manifest" remote="lrv" />
+  <project path="manifest" name="android_manifest" remote="lrv" revision="master"/>
 
   <!-- PureNexus repos -->
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
