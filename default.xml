@@ -20,24 +20,19 @@
   <project path="vendor/nexus" name="android_vendor_nexus" remote="pn" revision="mm" />
   <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pn" revision="mm" />
-  <!--
   <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
   <project path="build" name="android_build" groups="pdk" remote="pn" revision="mm">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  -->
 
   <!-- CyanogenMod repos -->
-  <!-- <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" /> -->
+  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
 
 
   <!-- Temp use binary kernel as source tree does not currenty build -->
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
 
   <!-- AOSP repos -->
-  <project path="build" name="platform/build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
