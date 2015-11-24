@@ -19,14 +19,20 @@
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
   <project path="vendor/nexus" name="android_vendor_nexus" remote="pn" revision="mm" />
   <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pn" revision="mm" />
+  <!--
   <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
   <project path="build" name="android_build" groups="pdk" remote="pn" revision="mm">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pn" revision="mm" />
+  -->
 
   <!-- CyanogenMod repos -->
   <!-- <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" /> -->
+
+
+  <!-- Temp use binary kernel as source tree does not currenty build -->
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
 
   <!-- AOSP repos -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -46,6 +52,7 @@
   <project path="device/asus/fugu" name="device/asus/fugu" groups="device,fugu,broadcom_pdk" />
   <project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu,broadcom_pdk" clone-depth="1" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
   <project path="device/lge/bullhead" name="device/lge/bullhead" groups="device,bullhead" />
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
