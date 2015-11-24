@@ -35,6 +35,9 @@
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
 
   <!-- AOSP repos -->
+  <project path="build" name="platform/build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
