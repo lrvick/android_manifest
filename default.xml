@@ -28,10 +28,6 @@
   <!-- CyanogenMod repos -->
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
 
-
-  <!-- Temp use binary kernel as source tree does not currenty build -->
-  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
-
   <!-- AOSP repos -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
