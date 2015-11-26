@@ -19,16 +19,17 @@
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
   <project path="vendor/nexus" name="android_vendor_nexus" remote="pn" revision="mm" />
   <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pn" revision="mm" />
-  <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler,broadcom_pdk" remote="pn" revision="mm" />
-  <project path="build" name="android_build" groups="pdk" remote="pn" revision="mm">
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
 
   <!-- CyanogenMod repos -->
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
 
   <!-- AOSP repos -->
+  <project path="kernel/huawei/angler" name="kernel/msm" groups="device,angler,broadcom_pdk" revision="android-msm-angler-3.10-marshmallow-dr" />
+  <project path="frameworks/base" name="frameworks/base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="build" name="platform/build" groups="pdk">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
