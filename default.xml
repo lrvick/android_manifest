@@ -14,6 +14,7 @@
 
   <!-- lrvick repos -->
   <project path="manifest" name="android_manifest" remote="lrv" revision="master"/>
+  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="lrv" revision="master"/>
 
   <!-- PureNexus repos -->
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
@@ -27,7 +28,6 @@
   <project path="build" name="platform/build" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/huawei/angler" name="device/huawei/angler" groups="device,angler,broadcom_pdk" />
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
