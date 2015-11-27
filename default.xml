@@ -19,9 +19,6 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <!-- PureNexus repos -->
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pn" revision="mm" />
-
   <!-- CyanogenMod repos -->
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
 
