@@ -17,11 +17,13 @@
   <!-- CyanogenMod repos -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="github" revision="cm-13.0" />
+  <!--
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" remote="github" revision="cm-13.0" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" groups="pdk-fs" remote="github" revision="cm-13.0"/>
+  -->
 
   <!-- External Repos -->
-  <project path="packages/apps/F-Droid" name="fdroid/fdroidclient.git" groups="pdk-fs" remote="gitlab" revision="master"/>
+  <!-- <project path="packages/apps/F-Droid" name="fdroid/fdroidclient.git" groups="pdk-fs" remote="gitlab" revision="master"/> -->
 
   <!-- AOSP repos -->
   <project path="kernel/huawei/angler" name="kernel/msm" groups="device,angler,broadcom_pdk" revision="android-msm-angler-3.10-marshmallow-dr" />
