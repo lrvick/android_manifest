@@ -19,10 +19,11 @@ personal use in mind, and as a reference for others wanting to do similar.
   * Google Apps and Play Services are -optional-
   * Vendor blobs auto-extracted direct from Google Servers
   * Built-in Superuser and Busybox
+  * Build-in F-Droid as Play Store alternative
 
-## Google Apps Alternatives ##
+## Proprietary App Alternatives ##
 
-  If you, choose to opt out of Google Apps and use the ROM as-is, consider
+  If you choose to opt out of Google Apps and use the ROM as-is, consider
   the following open alternatives I use daily:
 
   * Play Store -> F-Droid
@@ -30,16 +31,31 @@ personal use in mind, and as a reference for others wanting to do similar.
   * Google Music -> Tomahawk
   * Google Maps -> Maps.me
   * Youtube -> Newpipe
+  * Drive -> ownCloud
+  * Sync -> oandbackup / ownCloud
+  * Keep -> Mirakel
+  * Google Authenticator -> Yubico Authenticator
   * Hangouts -> Weechat - (IRC/XMPP but no Hangouts. Google shut down the APIs)
+
+  And while we are here, alternatives to other popular apps:
+
+  * Facebook -> Face Slim or Tinfoil
+  * Twitter -> AndStatus
+  * Lastpass -> Open Keychain + Password Store
+
+  As for the wealth of proprietary streaming media apps like Hulu/Netflix...
+  there are not really any solutions I consider worth trusting on device that
+  you rely on. I instead just keep cheap untrusted tablets and Android set-top
+  devices like the Chromecast or Nexus Player around for those use cases.
 
 ## Dependencies ##
 
  * Debian based distro ( Other distros use vm or debootstrap/chroot )
  * Debian packages:
-			git-core gnupg flex bison gperf build-essential
-  		zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386
-  		lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache
-  		libgl1-mesa-dev libxml2-utils xsltproc unzip schedtool
+	    git-core gnupg flex bison gperf build-essential
+      zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386
+      lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache
+      libgl1-mesa-dev libxml2-utils xsltproc unzip schedtool
  * [Repo Tool](https://source.android.com/source/downloading.html#installing-repo)
  * [Android Platform Tools](https://developer.android.com/sdk/installing/index.html?pkg=tools)
 
