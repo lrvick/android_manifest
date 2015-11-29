@@ -45,26 +45,26 @@ personal use in mind, and as a reference for others wanting to do similar.
 
 ## Building ##
 
-### Sync Sources ###
+Sync Sources:
 ```
 > repo init -u https://github.com/lrvick/android_manifest -b master
 > repo sync
 ```
 
-### Setup Environmet ###
+Set up Environmet:
 ```
 > . build/envsetup.sh
 > export CROSS_COMPILE=aarch64-linux-android-
 ```
 
-### Build Kernel ###
+Build Kernel:
 ```
 > cd kernel/huawei/angler/
 > make angler_defconfig
 > make -j4
 ```
 
-### Build ROM ###
+Build ROM:
 ```
 > lunch aosp_angler-userdebug
 > bash device/huawei/angler/extract-files.sh
