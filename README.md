@@ -55,6 +55,9 @@ Set up Environmet:
 ```
 > . build/envsetup.sh
 > export CROSS_COMPILE=aarch64-linux-android-
+> export USE_CCACHE=1
+> export CCACHE_DIR=~/.ccache
+> prebuilts/misc/linux-x86/ccache/ccache -M 50G
 ```
 
 Build Kernel:
