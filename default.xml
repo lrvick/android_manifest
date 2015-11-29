@@ -1,31 +1,26 @@
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
-  <remote  name="lrv"
-           fetch="https://github.com/lrvick/" />
-  <remote  name="pn"
-           fetch="https://github.com/PureNexus/" />
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod/" />
+  <remote name="aosp" fetch="https://android.googlesource.com/" />
+  <remote name="github" fetch="https://github.com/" />
   <default revision="refs/tags/android-6.0.0_r26"
            remote="aosp"
            sync-j="4" />
 
   <!-- lrvick repos -->
-  <project path="manifest" name="android_manifest" remote="lrv" revision="master"/>
-  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="lrv" revision="master"/>
-  <project path="build" name="android_platform_build" groups="pdk" remote="lrv" revision="master">
+  <project path="manifest" name="lrvick/android_manifest" remote="github" revision="master"/>
+  <project path="device/huawei/angler" name="lrvick/android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="github" revision="master"/>
+  <project path="build" name="lrvick/android_platform_build" groups="pdk" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <!-- CyanogenMod repos -->
-  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
+  <!-- External repos -->
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
+  <project path="external/koush/Superuser" name="koush/Superuser" remote="github" revision="master" />
+  <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
 
   <!-- AOSP repos -->
   <project path="kernel/huawei/angler" name="kernel/msm" groups="device,angler,broadcom_pdk" revision="android-msm-angler-3.10-marshmallow-dr" />
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
-
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
