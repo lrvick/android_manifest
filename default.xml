@@ -13,9 +13,10 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <!-- External repos -->
+  <!-- CyanogenMod repos -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
-  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" remote="github" revision="cm-12.0" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="github" revision="cm-13.0" />
+  <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" remote="github" revision="cm-13.0" />
 
   <!-- AOSP repos -->
   <project path="kernel/huawei/angler" name="kernel/msm" groups="device,angler,broadcom_pdk" revision="android-msm-angler-3.10-marshmallow-dr" />
@@ -465,7 +466,6 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
