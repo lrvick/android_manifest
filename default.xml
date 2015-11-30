@@ -9,16 +9,16 @@
 
   <!-- lrvick repos -->
   <project path="manifest" name="lrvick/android_manifest" remote="github" revision="master"/>
-  <project path="device/huawei/angler" name="lrvick/android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="github" revision="master"/>
-  <project path="build" name="lrvick/android_platform_build" groups="pdk" remote="github" revision="master">
+  <project path="build" name="lrvick/android_build" groups="pdk" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="device/huawei/angler" name="lrvick/android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="github" revision="master"/>
+  <project path="system/extras" name="lrvick/android_system_extras" groups="pdk" remote="github" revision="master" />
 
   <!-- CyanogenMod repos -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
-  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="github" revision="cm-13.0" />
-  <!--
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" remote="github" revision="cm-13.0" />
+  <!--
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" groups="pdk-fs" remote="github" revision="cm-13.0"/>
   -->
 
